@@ -1,0 +1,200 @@
+*{
+    box-sizing: border-box;
+}
+h1,
+h2,
+ul{
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1150px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.headerContainer{
+    background-color: #F8F8F8;
+    border-radius: 30px;
+}
+
+.navigationList{
+    min-height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navigationItem{
+    list-style-type: none;
+}
+
+.navigationLink{
+    position: relative;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    color: black;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.navigationLink::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+}
+.navigationLink:hover:before{
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+
+
+
+.main{
+    margin-top: 20px;
+}
+.mainContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.leftSide{
+    max-width: 455px;
+    height: 100%;
+    margin-right: 20px;
+}
+.name{
+    min-width: 455px;
+    height: 750px;
+    background-color: black;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.myPhoto{
+    width: 325px;
+    height: 325px;
+    border-radius: 30px;
+}
+.myName{
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.myProfession{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 100px;
+}
+
+
+.contacts{
+    min-width: 455px;
+    min-height: 355px;
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+.contactsHeading{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0 40px 15px 40px;
+}
+.contactsItem{
+    margin-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.skills{
+    min-width: 455px;
+    min-height: 420px;
+    background-color: #E9E5DC;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+.skillsHeading{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0 40px 20px 40px;
+}
+
+.skillsList{
+    margin-left: 60px;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+
+.summary{
+    max-width: 630px;
+    min-height: 660px; 
+    background-color: #E9E5DC;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.summaryHeading{
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: 0 40px 20px 40px;
+}
+
+.summaryParagraph{
+    padding-left: 40px;
+    padding-right: 40px;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+.courses{
+    max-width: 630px;
+    min-height: 645px;
+    background-color: #F8F8F8;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+
+.languages{
+    max-width: 630px;
+    min-height: 215px;
+    background-color: black;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    color: white;
+}

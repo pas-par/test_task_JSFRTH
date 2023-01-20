@@ -70,18 +70,13 @@ body{
     margin-top: 20px;
 }
 .mainContainer{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 430px minmax(430px, 630px);
+    grid-gap: 10px;
     justify-content: space-between;
 }
 
-.leftSide{
-    max-width: 455px;
-    height: 100%;
-    margin-right: 20px;
-}
 .name{
-    min-width: 455px;
     height: 750px;
     background-color: black;
     border-radius: 30px;
@@ -89,12 +84,10 @@ body{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-right: 20px;
 }
 
 .myPhoto{
-    width: 325px;
-    height: 325px;
+    width: 70%;
     border-radius: 30px;
 }
 .myName{
@@ -112,11 +105,9 @@ body{
 
 
 .contacts{
-    min-width: 455px;
     min-height: 355px;
     background-color: #F8F8F8;
     border-radius: 30px;
-    margin-top: 30px;
 }
 .contactsHeading{
     font-size: 30px;
@@ -134,7 +125,6 @@ body{
 }
 
 .skills{
-    min-width: 455px;
     min-height: 420px;
     background-color: #E9E5DC;
     margin-top: 30px;
@@ -155,13 +145,10 @@ body{
     font-size: 20px;
 }
 
-
 .summary{
-    max-width: 630px;
     min-height: 660px; 
     background-color: #E9E5DC;
     border-radius: 30px;
-    margin-bottom: 30px;
 }
 
 .summaryHeading{
@@ -180,21 +167,29 @@ body{
 }
 
 .courses{
-    max-width: 630px;
     min-height: 645px;
     background-color: #F8F8F8;
     border-radius: 30px;
-    margin-bottom: 30px;
 }
 
 
 
 
 .languages{
-    max-width: 630px;
     min-height: 215px;
     background-color: black;
     border-radius: 30px;
-    margin-bottom: 20px;
     color: white;
+}
+
+
+@media screen and (max-width: 910px){
+    .mainContainer{
+        grid-template-columns: minmax(220px, 100%);
+        justify-content: space-between;
+    }
+    .myPhoto{
+        width: 50%;
+        border-radius: 30px;
+    }
 }

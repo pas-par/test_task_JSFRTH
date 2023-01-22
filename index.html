@@ -8,16 +8,17 @@
     <title>Parubski Pavel</title>
 </head>
 <body>
+
     <header class="header">
         <div class="container">
             <div class="headerContainer">
                 <nav class ="navigation">
                     <ul class="navigationList">
-                        <li class="navigationItem"><a class="navigationLink" href="">Contacts</a></li>
-                        <li class="navigationItem"><a class="navigationLink" href="">Summary</a></li>
-                        <li class="navigationItem"><a class="navigationLink" href="">Skills</a></li>
-                        <li class="navigationItem"><a class="navigationLink" href="">Courses</a></li>
-                        <li class="navigationItem"><a class="navigationLink" href="">Languages</a></li>
+                        <li class="navigationItem"><a class="navigationLink" href="#contacts">Contacts</a></li>
+                        <li class="navigationItem"><a class="navigationLink" href="#skills">Skills</a></li>
+                        <li class="navigationItem"><a class="navigationLink" href="#summary">Summary</a></li>
+                        <li class="navigationItem"><a class="navigationLink" href="#courses">Courses</a></li>
+                        <li class="navigationItem"><a class="navigationLink" href="#languages">Languages</a></li>
                     </ul>
                 </nav> 
             </div>
@@ -27,47 +28,64 @@
     <main class="main">
         <div class="container">
             <div class="mainContainer">
-                <article class="name">
-                    <img  class = "myPhoto" src="./assets/img/photo.jpg" alt="photo">
-                    <h1 class="myName">Pavel Parubski</h1>
-                    <h2 class="myProfession">front-end developer</h2>
-                </article>
-                <article class="summary">
-                    <h2 class="summaryHeading">Summary</h2>
-                    <p class="summaryParagraph">I can't say a lot of about myself. My core strengths are stress resistance and a lot of free time, also i have goal, goal to learn front-end development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam natus deserunt quod laudantium obcaecati a debitis amet repellat incidunt id labore reprehenderit tenetur, ab quo quis. Atque, sunt voluptate.</p>
-                </article>
-                <article class="contacts">
-                    <h2 class="contactsHeading">Contacts</h2>
-                    <ul class="contactsList">
-                        <li class="contactsItem">GitHub:<br><a href="">asdasd</a></li>
-                        <li class="contactsItem">Telegram:<br><a href="">asdasd</a></li>
-                        <li class="contactsItem">Email:<br><a href="">asdasd</a></li>
-                    </ul>
-                </article>
-                <article class="courses">
-                    <h2 class="coursesHeading">Courses</h2>
-                    <p class="coursesParagraph">I can't say a lot of about myself. My core strengths are stress resistance and a lot of free time, also i have goal, goal to learn front-end development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam natus deserunt quod laudantium obcaecati a debitis amet repellat incidunt id labore reprehenderit tenetur, ab quo quis. Atque, sunt voluptate.</p>
-                </article>
-                <article class="skills">
-                    <h2 class="skillsHeading">Skills</h2>
-                    <ul class="skillsList">
-                        <li class="skillsItem">HTML</li>
-                        <li class="skillsItem">CSS</li>
-                        <li class="skillsItem">JavaScript</li>
-                        <li class="skillsItem">Git</li>
-                        <li class="skillsItem">Figma</li>
-                    </ul>
-                </article>
-                
-                
-                <article class="languages">
-                    <h2 class="languagesHeading">Lang</h2>
-                    <p class="languagesParagraph">I can't say a lot of about myself. My core strengths are stress resistance and a lot of free time, also i have goal, goal to learn front-end development. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ipsam natus deserunt quod laudantium obcaecati a debitis amet repellat incidunt id labore reprehenderit tenetur, ab quo quis. Atque, sunt voluptate.</p>
-                </article>
+                <aside class="aside">
+                    <article class="person">
+                        <img  class = "personPhoto" src="photo.jpg" alt="photo">
+                        <h1 class="personName"> Pavel Parubski </h1>
+                        <h2 class="personProfession">front-end developer</h2>
+                    </article>
+                    <article class="contacts" id="contacts">
+                        <h2 class="contactsHeading">Contacts</h2>
+                        <ul class="contactsList">
+                            <li class="contactsItem">GitHub:<br><a class="linksOnMain" href="https://github.com/pas-par">pas-par</a></li>
+                            <li class="contactsItem">Telegram:<br><a class="linksOnMain" href="https://t.me/pparubski">@pparubski</a></li>
+                            <li class="contactsItem">Email:<br><a class="linksOnMain" href="mailto:pparubski@gmail.com ">pparubski@gmail.com</a></li>
+                        </ul>
+                    </article>
+                    <article class="skills" id="skills">
+                        <h2 class="skillsHeading">Skills</h2>
+                        <ul class="skillsList">
+                            <li class="skillsItem">HTML</li>
+                            <li class="skillsItem">CSS</li>
+                            <li class="skillsItem">JavaScript</li>
+                            <li class="skillsItem">Git</li>
+                            <li class="skillsItem">Figma</li>
+                        </ul>
+                    </article>
+                </aside>
+                <div class="about">
+                    <article class="summary" id="summary">
+                        <h2 class="summaryHeading">Summary</h2>
+                        <p class="summaryParagraph">Hello, my name is Pavel. Im 22 years old. I can't say a lot of about myself. My core strengths are stress resistance and a lot of free time, also i have goal, goal change my live and learn front-end development.I don't have much experience yet but when I heard about your course, I thought it was too good opportunity not to try to get on it.</p>
+                    </article>
+                    <article class="courses" id="courses">
+                        <h2 class="coursesHeading">Courses</h2>
+                        <ul class="coursesList">
+                            <li class="coursesItem">HTML:<br><a class="linksOnMain" href="https://code-basics.com/ru/languages/html">Курс HTML: обучение html верстке для начинающих</a></li>
+                            <li class="coursesItem">CSS:<br><a class="linksOnMain" href="https://code-basics.com/ru/languages/css">Курс CSS: онлайн обучение с нуля</a></li>
+                            <li class="coursesItem">JavaScript:<br><a class="linksOnMain" href="https://code-basics.com/ru/languages/javascript">Курс JavaScript: обучение JS для начинающих</a></li>
+                            <li class="coursesItem">rs.school:<br><a class="linksOnMain" href="https://rs.school/js-stage0/">Подготовительный курс «JavaScript/Front-end. Stage 0»</a> (in progress)</li>
+                        </ul>
+                    </article>
+                    <article class="languages" id="languages">
+                        <h2 class="languagesHeading">Languages</h2>
+                        <ul class="languagesList">
+                            <li class="languagesItem">Russian - native speaker</li>
+                            <li class="languagesItem">English - B1 - B2 <a class="linksOnMain redLink" href="https://www.efset.org/cert/CUGfQ5">certificate</a> </li>
+                        </ul>
+                    </article>
+                </div>
             </div>
         </div>
     </main>
     
-    <footer class="footer"></footer>
+    <footer class="footer">
+        <div class="container">
+            <div class="footerContainer">
+                <p class="footerParagraph">Test task completed for <a class="footerLink" href="https://www.datamola.com/js-from-zero-to-hero">DATAMOLA: JS From Zero To Hero 2023</a></p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>

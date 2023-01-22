@@ -1,3 +1,6 @@
+:root{
+    --radius: 30px;
+}
 *{
     box-sizing: border-box;
 }
@@ -12,7 +15,7 @@ body{
     height: 100%;
     margin: 0;
     padding: 0;
-
+    scroll-behavior: smooth;
 }
 
 body{
@@ -29,7 +32,7 @@ body{
 
 .headerContainer{
     background-color: #F8F8F8;
-    border-radius: 30px;
+    border-radius: var(--radius);
 }
 
 .navigationList{
@@ -46,7 +49,6 @@ body{
 .navigationLink{
     position: relative;
     text-decoration: none;
-    scroll-behavior: smooth;
     color: black;
     text-transform: uppercase;
     font-size: 20px;
@@ -64,99 +66,104 @@ body{
     transition: 0.4s ease-out;
 }
 
-
-
-.main{
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
     margin-top: 20px;
 }
-.mainContainer{
-    display: grid;
-    grid-template-columns: 430px minmax(430px, 630px);
-    grid-gap: 10px;
-    justify-content: space-between;
-}
 
-.name{
-    height: 750px;
-    background-color: black;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.myPhoto{
-    width: 70%;
-    border-radius: 30px;
-}
-.myName{
-    color: white;
-    text-transform: uppercase;
-    font-size: 40px;
-}
-
-.myProfession{
-    color: white;
-    text-transform: uppercase;
-    font-size: 25px;
-    padding-bottom: 100px;
-}
-
-
-.contacts{
-    min-height: 355px;
-    background-color: #F8F8F8;
-    border-radius: 30px;
-}
-.contactsHeading{
+article>h2{
     font-size: 30px;
     border-bottom: 1px solid black;
     padding-top: 40px;
     padding-bottom: 20px;
     margin: 0 40px 15px 40px;
 }
-.contactsItem{
-    margin-left: 40px;
-    padding-bottom: 20px;
-    padding-top: 10px;
+article>ul{
+    margin-left: 60px;
+    line-height: 30px;
     font-size: 20px;
-    list-style-type: none;
+}
+.aside{
+    min-width: 450px;
+    margin-right: 20px;
+}
+.aside > section{
+    margin-bottom: 35px;
+}
+.aside > section:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.person{
+    height: 750px;
+    background-color: black;
+    border-radius: var(--radius);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.3s;
 }
 
-.skills{
-    min-height: 420px;
-    background-color: #E9E5DC;
-    margin-top: 30px;
+.personPhoto{
+    width: 70%;
+    border-radius: var(--radius);
+}
+.personName{
+    color: white;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.personProfession{
+    color: white;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding-bottom: 100px;
+}
+
+.contacts{
+    height: 350px;
+    background-color: #F8F8F8;
     border-radius: 30px;
+    transition: 0.3s;
 }
-
-.skillsHeading{
-    font-size: 30px;
-    border-bottom: 1px solid black;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    margin: 0 40px 20px 40px;
+.contactsItem{
+    padding-bottom: 10px;
 }
-
+.contactsList{
+    list-style-type: square;
+}
+.skills{
+    height: 350px;
+    background-color: #E9E5DC;
+    border-radius: var(--radius);
+    transition: 0.3s;
+}
 .skillsList{
     margin-left: 60px;
     line-height: 30px;
     font-size: 20px;
 }
-
-.summary{
-    min-height: 660px; 
-    background-color: #E9E5DC;
-    border-radius: 30px;
+.about{
+    min-width: 400px;
+}
+.about > section{
+    margin-bottom: 35px;
+}
+.about > section:hover{
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
 }
 
-.summaryHeading{
-    font-size: 30px;
-    border-bottom: 1px solid black;
-    padding-top: 40px;
-    padding-bottom: 20px;
-    margin: 0 40px 20px 40px;
+.summary{
+    height: 650px;
+    background-color: #E9E5DC;
+    border-radius: var(--radius);
+    transition: 0.3s;
 }
 
 .summaryParagraph{
@@ -164,32 +171,103 @@ body{
     padding-right: 40px;
     line-height: 25px;
     font-size: 20px;
+    word-spacing: 3px
 }
 
 .courses{
-    min-height: 645px;
+    height: 600px;
     background-color: #F8F8F8;
-    border-radius: 30px;
+    border-radius: var(--radius);
+    transition: 0.3s;
 }
 
-
-
+.coursesItem{
+    padding-bottom: 10px;
+}
 
 .languages{
-    min-height: 215px;
+    height: 200px;
     background-color: black;
-    border-radius: 30px;
+    border-radius: var(--radius);
     color: white;
+    transition: 0.3s;
 }
 
+.languagesHeading{
+    border-bottom: 1px solid white;
+}
+
+.linksOnMain{
+    position: relative;
+    text-decoration: none;
+    color: rgb(242, 134, 10);
+    font-size: 20px;
+
+}
+.linksOnMain::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0;
+    height: 1px;
+    background-color: rgb(242, 134, 10);
+}
+.linksOnMain:hover:before{
+    width: 100%;
+    transition: 0.4s ease-out;
+}
+.redLink{
+    color: rgb(255, 0, 0);
+}
+.redLink:before{
+    background-color: rgb(255, 0, 0);;
+}
+
+.footerContainer{
+    background-color: #F8F8F8;
+    border-radius: var(--radius);
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.footerParagraph{
+    font-size: 20px;
+    text-align: center;
+}
+.footerLink{
+    color: black;
+    text-decoration: none;
+}
 
 @media screen and (max-width: 910px){
-    .mainContainer{
-        grid-template-columns: minmax(220px, 100%);
-        justify-content: space-between;
+    .navigationList{
+        flex-wrap: wrap;
     }
-    .myPhoto{
+    .navigationItem{
+        padding-left: 10px;
+    }
+    
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        margin-top: 5px;
+    }
+    .aside{
+        margin-bottom: 0;
+        min-width: 100%;
+    }
+    .mainInfo{
+        min-width: 100%;
+    }
+    .personPhoto{
         width: 50%;
-        border-radius: 30px;
+        border-radius: var(--radius);
+    }
+    .footerParagraph{
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
